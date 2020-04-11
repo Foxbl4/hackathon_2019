@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Иваново</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div>
+<ul class="list">
+    <li id="first"><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Экономика и управление</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Электро- и теплоэнергетика</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Юриспруденция</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Клиническая медицина</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Образование и педагогические науки</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Техника и технологии строительства</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Сельское, лесное и рыбное хозяйство</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Информатика и вычислительная техника</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Машиностроение</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Ветеринария и зоотехния</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Техносферная безопасность и природообустройство</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">История и археология</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Биологические науки</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Управление в технических системах</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Сервис и туризм</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Средства массовой информации и информационно-библиотечное дело</a></li>
+	<li><a href="javascript:void(0);"  onClick="drawdiag('ivanovo', this)">Психологические науки</a></li>
+</ul>
+</div>
+<div class="home">
+<a href="index.html">Главная Страница</a>	
+</div>
+<div class="content">
+	<h3 align="center" id="name">Название диаграммы </h3>
+	<p>Потребность кадров через 5 лет: <b id="trend"></b></p>
+	<p>Ожидаемая средняя заработная плата: <b id="salary"></b></p>
+<script src="js/chart.js@2.8.0"></script>
+<canvas id="myChart"></canvas>
+<script src="js/diagramms.js"></script>
+	<p>Необходимый преподавательский состав по текущему набору: <b id="prof_cur"></b></p>
+	<p>Необходимый преподавательский состав по рекомендуемому набору: <b id="prof_rec"></b></p>
+</div>
+</body>
+<script type="text/javascript">drawdiag('ivanovo', document.getElementById('first'))</script>
+</html> 
